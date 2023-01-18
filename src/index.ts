@@ -33,7 +33,7 @@ try {
   if (isNaN(inputNum)) {
     console.log('This is not a number.')
   } else if (inputNum <= 0) {
-    console.log('This is not an integer')
+    console.log('Invalid input!')
   } else asterisk(inputNum)
 } catch (e) {
   console.log('\nThis is not a number')
