@@ -11,26 +11,22 @@ import promptSync from 'prompt-sync'
 const prompt = promptSync()
 
 function asterisk(integer: number, spacesNum: number = 0) {
-  // Generate asterisk.
   let output: string = ''
 
   for (let counter: number = 0; counter < spacesNum; counter++) {
     output += ' '
   }
-
   for (let counter1: number = 0; counter1 < integer; counter1++) {
     output += '* '
   }
-
   console.log(output)
-
   if (integer > 1) {
     asterisk(integer - 1, spacesNum + 1)
   }
   console.log(output)
 }
 
-const input = prompt('Insert height of hourglass: ')
+const input = prompt('Insert Hourglass Width: ')
 try {
   const inputNum = parseInt(input)
 
